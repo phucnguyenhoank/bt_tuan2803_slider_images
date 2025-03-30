@@ -25,13 +25,22 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
-        // Find button and set click listener
+        // Button for ViewFlipperActivity
         Button btnOpenViewFlipper = findViewById(R.id.btnOpenViewFlipper);
         btnOpenViewFlipper.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Open ViewFlipperActivity
                 Intent intent = new Intent(MainActivity.this, ViewFlipperActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        // Button for SlideImagesActivity
+        Button btnOpenSlideImages = findViewById(R.id.btnOpenSlideImages);
+        btnOpenSlideImages.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, SlideImagesActivity.class);
                 startActivity(intent);
             }
         });
