@@ -17,7 +17,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+        android:layout_marginBottom="16dp"/>
 
     <!-- Button to open SlideImagesActivity -->
     <Button
@@ -28,6 +28,16 @@
         app:layout_constraintTop_toBottomOf="@id/btnOpenViewFlipper"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Button to open SlideImagesActivity2 (ViewPager2 with CircleIndicator3) -->
+    <Button
+        android:id="@+id/btnOpenSlideImages2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Open Slide Images (ViewPager2)"
+        app:layout_constraintTop_toBottomOf="@id/btnOpenSlideImages"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

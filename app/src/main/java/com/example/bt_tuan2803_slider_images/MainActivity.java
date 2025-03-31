@@ -44,5 +44,12 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        // Button for SlideImagesActivity2
+        Button btnOpenSlideImages2 = findViewById(R.id.btnOpenSlideImages2);
+        btnOpenSlideImages2.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, SlideImagesActivity2.class);
+            startActivity(intent);
+        });
     }
 }
