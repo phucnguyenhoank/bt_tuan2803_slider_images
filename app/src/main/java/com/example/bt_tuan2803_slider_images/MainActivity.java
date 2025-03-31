@@ -51,5 +51,10 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(MainActivity.this, SlideImagesActivity2.class);
             startActivity(intent);
         });
+
+        findViewById(R.id.btnSliderView).setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, SlideImagesActivity3.class);
+            startActivity(intent);
+        });
     }
 }

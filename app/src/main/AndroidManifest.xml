@@ -17,6 +17,9 @@
         android:theme="@style/Theme.Bt_tuan2803_slider_images"
         tools:targetApi="31">
         <activity
+            android:name=".SlideImagesActivity3"
+            android:exported="false" />
+        <activity
             android:name=".SlideImagesActivity2"
             android:exported="false" />
         <activity
